@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -euv
+
+sbt compile
+sbt publishLocal
+cd src/sbt-test/simple/
+sbt update
+sbt routesYml

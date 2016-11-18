@@ -1,0 +1,17 @@
+# Common
+controllers.Application:
+  GET /:
+    index:
+  GET /images/*file:
+    loadImage:
+      file:
+
+# Login
+controllers.Login:
+  GET /login:
+    doNew:
+      token: String = ""
+  POST /login:
+    login:
+      user: String
+      password: String

@@ -1,0 +1,5 @@
+GET  /                    controllers.Application.index
+GET  /images/*file        controllers.Application.loadImage(file)
+
+GET  /login               controllers.Login.doNew(token: String = "")
+POST /login               controllers.Login.login(user: String, password: String)
